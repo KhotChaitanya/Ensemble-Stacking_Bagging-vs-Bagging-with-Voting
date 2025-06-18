@@ -4,22 +4,22 @@
 
 Compare the performance of:
 
-- ✅ **Bagging with Random Forest**: A classic ensemble learning method that reduces variance.
-- ✅ **Bagging + Voting (Random Forest Trio)**: Combines multiple Random Forest models via a voting mechanism to potentially boost prediction accuracy.
+- **Bagging with Random Forest**: A classic ensemble learning method that reduces variance.
+- **Bagging + Voting (Random Forest Trio)**: Combines multiple Random Forest models via a voting mechanism to potentially boost prediction accuracy.
 
 All experiments are performed on the **mtcars dataset**, with the target variable being `mpg` (miles per gallon). The primary question: _Does voting among Random Forest models improve regression performance over standard bagging?_
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 
-- 📁 Source: `mtcars.csv`
-- 🎯 Target: `mpg`
-- 🔍 Features: Cylinders, displacement, horsepower, weight, transmission type, etc.
+- Source: `mtcars.csv`
+- Target: `mpg`
+- Features: Cylinders, displacement, horsepower, weight, transmission type, etc.
 
 ---
 
-## ⚙️ Model Pipeline
+## Model Pipeline
 
 1. **Data Preprocessing**
    - Train-test split (80/20)
@@ -35,7 +35,7 @@ All experiments are performed on the **mtcars dataset**, with the target variabl
 
 ---
 
-## 📈 Visualizations Included
+## Visualizations Included
 
 | Visualization | Description |
 |---------------|-------------|
@@ -46,7 +46,6 @@ All experiments are performed on the **mtcars dataset**, with the target variabl
 **1. Actual vs Predicted Line Plot:**
 
 ![5_1](https://github.com/user-attachments/assets/2806eb80-1c8a-4f0f-87a2-fa48471cfcb7)
-
 
 
 **2. Numeric Performance:**
@@ -62,13 +61,13 @@ All experiments are performed on the **mtcars dataset**, with the target variabl
 
 ---
 
-## 🔍 Results
+## Results
 
 | Model                  | R² Score | RMSE  |
 |------------------------|----------|-------|
 | Bagging (RF)           | ~ 0.91   | ~ 1.75|
 | Voting (3x RF Models)  | ~ 0.93   | ~ 1.55|
 
-> 📌 **Observation:** Voting RF gave a slightly better R² and lower RMSE, suggesting improvement through ensemble diversity.
+> **Observation:** Voting RF gave a slightly better R² and lower RMSE, suggesting improvement through ensemble diversity.
 
 ---
